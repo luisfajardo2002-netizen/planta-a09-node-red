@@ -1,1 +1,1295 @@
-[]
+[
+    {
+        "id": "1a4b70ead5edc168",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "fef8c534b412dd3e",
+        "type": "tab",
+        "label": "A09 - Simulador de Planta",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "17c8b03b530cf953",
+        "type": "tab",
+        "label": "A09 - Receptor MQTT",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d03eb7c19bb59125",
+        "type": "tab",
+        "label": "A09 - Dashboard Industrial",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9ee932ce78095ba9",
+        "type": "tab",
+        "label": "A09 - Control y Automatización",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f8e8a5680da7ae29",
+        "type": "tab",
+        "label": "A09 - KPI e Históricos",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4c1379c5b553b0e5",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1eb501bc38e9d020",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "1164fc3c31cd6163",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#fcfcfd",
+            "primary": "#0d74ce",
+            "bgPage": "#f9f9fb",
+            "groupBg": "#ffffff",
+            "groupOutline": "#d9d9e0"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "861ea12b2e700498",
+        "type": "ui-page",
+        "name": "Page 1",
+        "ui": "1eb501bc38e9d020",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "1164fc3c31cd6163",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 3
+            },
+            {
+                "name": "Tablet",
+                "px": 576,
+                "cols": 6
+            },
+            {
+                "name": "Small Desktop",
+                "px": 768,
+                "cols": 9
+            },
+            {
+                "name": "Desktop",
+                "px": 1024,
+                "cols": 12
+            }
+        ],
+        "tabs": [],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "213dc60e44d275b6",
+        "type": "ui-group",
+        "name": "Group 1",
+        "page": "861ea12b2e700498",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "3c2c8578563b970a",
+        "type": "ui-theme",
+        "name": "Tema Industrial A09",
+        "colors": {
+            "surface": "#fcfcfd",
+            "primary": "#0d74ce",
+            "bgPage": "#f9f9fb",
+            "groupBg": "#ffffff",
+            "groupOutline": "#d9d9e0"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "e19edb4e7ed3ec82",
+        "type": "ui-page",
+        "name": "Planta de Tratamiento A09",
+        "ui": "1eb501bc38e9d020",
+        "path": "/page2",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "3c2c8578563b970a",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "tabs": [],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "01eaef5ba49512dd",
+        "type": "ui-group",
+        "name": "Monitoreo de Planta",
+        "page": "e19edb4e7ed3ec82",
+        "width": "12",
+        "height": "12",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "6bb6108d7976570f",
+        "type": "inject",
+        "z": "fef8c534b412dd3e",
+        "name": "Reloj del simulador",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 360,
+        "wires": [
+            [
+                "85fbc2f544ba6cef"
+            ]
+        ]
+    },
+    {
+        "id": "85fbc2f544ba6cef",
+        "type": "function",
+        "z": "fef8c534b412dd3e",
+        "name": "Simulador de tratamiento de aguas",
+        "func": "\nconst dt = 1 / 60; // Un segundo expresado en minutos\nconst capacidad = 3000;\n\n// Recuperar el estado anterior o crear el inicial\nlet planta = flow.get(\"planta\") || {\n    nivel: 1500,\n    caudal: 0,\n    ph: 7.8,\n    turbidez: 12,\n    bomba: true,\n    dosificacion: 50,\n    descarga: false,\n    tiempo: 0\n};\n\n// Protección automática del tanque\nif (planta.nivel >= capacidad) {\n    planta.bomba = false;\n}\n\n// Protección automática de calidad y nivel\nif (\n    planta.ph < 6.5 ||\n    planta.ph > 8.5 ||\n    planta.turbidez >= 5 ||\n    planta.nivel <= 0\n) {\n    planta.descarga = false;\n}\n\n// Caudal de entrada según el estado de la bomba\nplanta.caudal = planta.bomba ? 40 : 0;\n\n// Salida de agua del tanque\nconst salida = planta.descarga ? 25 : 0;\n\n// Balance de volumen\nplanta.nivel += (planta.caudal - salida) * dt;\nplanta.nivel = Math.max(0, Math.min(capacidad, planta.nivel));\n\n// Dosificación gradual del reactivo simulado\nconst dosis = planta.dosificacion / 100;\nconst turbidezObjetivo = 12 - 10 * dosis;\nconst phObjetivo = 7.8 - 1.2 * dosis;\n\n// Respuesta gradual de las variables\nplanta.turbidez +=\n    (turbidezObjetivo - planta.turbidez) * 0.01;\n\nplanta.ph +=\n    (phObjetivo - planta.ph) * 0.005;\n\nplanta.tiempo += 1;\n\n// Guardar el estado compartido\nflow.set(\"planta\", planta);\n\n// Publicar telemetría\nmsg.payload = {\n    dispositivo: \"A09-Planta\",\n    timestamp: new Date().toISOString(),\n    nivel: Number(planta.nivel.toFixed(2)),\n    caudal: planta.caudal,\n    ph: Number(planta.ph.toFixed(2)),\n    turbidez: Number(planta.turbidez.toFixed(2)),\n    bomba: planta.bomba,\n    dosificacion: planta.dosificacion,\n    descarga: planta.descarga\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 360,
+        "wires": [
+            [
+                "6ac17c320c75b21b",
+                "a036c95e328b3958",
+                "c1bb69debe960964",
+                "359752635148efb8"
+            ]
+        ]
+    },
+    {
+        "id": "6ac17c320c75b21b",
+        "type": "debug",
+        "z": "fef8c534b412dd3e",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "a036c95e328b3958",
+        "type": "json",
+        "z": "fef8c534b412dd3e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 730,
+        "y": 420,
+        "wires": [
+            [
+                "4184cc89dd898c95"
+            ]
+        ]
+    },
+    {
+        "id": "4184cc89dd898c95",
+        "type": "mqtt out",
+        "z": "fef8c534b412dd3e",
+        "name": "Planta grupo9- Envío de datos",
+        "topic": "utm/iot/A09/telemetry/grupo9",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c1379c5b553b0e5",
+        "x": 970,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "73bea0b45aade7bf",
+        "type": "mqtt in",
+        "z": "fef8c534b412dd3e",
+        "name": "Comandos para simulador A09",
+        "topic": "utm/iot/A09/commands/grupo9",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "4c1379c5b553b0e5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 760,
+        "wires": [
+            [
+                "bdac845d338a1a74"
+            ]
+        ]
+    },
+    {
+        "id": "bdac845d338a1a74",
+        "type": "function",
+        "z": "fef8c534b412dd3e",
+        "name": "Aplicar comandos al simulador",
+        "func": "\nlet comando = msg.payload;\n\n// Convertir JSON recibido\nif (typeof comando === \"string\") {\n    try {\n        comando = JSON.parse(comando);\n    } catch (error) {\n        node.warn(\"JSON no válido\");\n        return null;\n    }\n}\n\nif (!comando || typeof comando !== \"object\" ||\n    Array.isArray(comando)) {\n    return null;\n}\n\n// Recuperar estado de la planta\nlet planta = flow.get(\"planta\");\n\nif (!planta) {\n    node.warn(\"Simulador todavía no inicializado\");\n    return null;\n}\n\n// Historial de comandos procesados\nlet procesados = context.get(\"comandosProcesados\") || {};\n\n// Identificar comando\nconst id = typeof comando.id === \"string\" &&\n           comando.id.trim() !== \"\"\n    ? comando.id\n    : null;\n\n// Detectar duplicados sin ejecutar nuevamente\nif (id && procesados[id]) {\n    msg.payload = {\n        id: id,\n        recibido: true,\n        aceptado: procesados[id].aceptado,\n        duplicado: true,\n        accion: procesados[id].accion,\n        valor: procesados[id].valor,\n        motivo: \"Comando duplicado: no se ejecutó nuevamente\",\n        timestamp: new Date().toISOString()\n    };\n\n    return msg;\n}\n\nlet aceptado = false;\nlet motivo = \"\";\n\n// Control de bomba\nif (comando.accion === \"bomba\") {\n    if (typeof comando.valor !== \"boolean\") {\n        motivo = \"Valor de bomba no válido\";\n    } else if (comando.valor && planta.nivel >= 3000) {\n        motivo = \"Tanque lleno. No se puede encender la bomba\";\n    } else {\n        planta.bomba = comando.valor;\n        aceptado = true;\n    }\n}\n\n// Control de dosificación\nelse if (comando.accion === \"dosificacion\") {\n    const valor = Number(comando.valor);\n\n    if (!Number.isFinite(valor) || valor < 0 || valor > 100) {\n        motivo = \"Dosificación fuera de rango\";\n    } else {\n        planta.dosificacion = valor;\n        aceptado = true;\n    }\n}\n\n// Control de descarga\nelse if (comando.accion === \"descarga\") {\n    if (typeof comando.valor !== \"boolean\") {\n        motivo = \"Valor de descarga no válido\";\n    } else if (\n        comando.valor &&\n        (\n            planta.ph < 6.5 ||\n            planta.ph > 8.5 ||\n            planta.turbidez >= 5 ||\n            planta.nivel <= 0\n        )\n    ) {\n        motivo = \"Descarga bloqueada: calidad de agua o nivel inadecuado\";\n    } else {\n        planta.descarga = comando.valor;\n        aceptado = true;\n    }\n}\n\nelse {\n    motivo = \"Comando no reconocido\";\n}\n\n// Guardar el estado si se aceptó\nif (aceptado) {\n    flow.set(\"planta\", planta);\n}\n\n// Registrar identificador para evitar duplicados\nif (id) {\n    procesados[id] = {\n        aceptado: aceptado,\n        accion: comando.accion,\n        valor: comando.valor\n    };\n\n    // Conservar únicamente los últimos 200 comandos\n    const ids = Object.keys(procesados);\n\n    if (ids.length > 200) {\n        delete procesados[ids[0]];\n    }\n\n    context.set(\"comandosProcesados\", procesados);\n}\n\n// Respuesta ACK\nmsg.payload = {\n    id: id,\n    recibido: true,\n    aceptado: aceptado,\n    duplicado: false,\n    accion: comando.accion,\n    valor: comando.valor,\n    motivo: aceptado ? \"Comando ejecutado\" : motivo,\n    timestamp: new Date().toISOString()\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 760,
+        "wires": [
+            [
+                "3f09016af496d4f1"
+            ]
+        ]
+    },
+    {
+        "id": "3f09016af496d4f1",
+        "type": "json",
+        "z": "fef8c534b412dd3e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 830,
+        "y": 760,
+        "wires": [
+            [
+                "1fc20591d7b744b8"
+            ]
+        ]
+    },
+    {
+        "id": "1fc20591d7b744b8",
+        "type": "mqtt out",
+        "z": "fef8c534b412dd3e",
+        "name": "Confirmación de comandos A09",
+        "topic": "utm/iot/A09/ack/grupo9",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c1379c5b553b0e5",
+        "x": 1070,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "71a188c633a24945",
+        "type": "inject",
+        "z": "fef8c534b412dd3e",
+        "name": "Prueba encender bomba",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":\"A09-DUP-004\",\"accion\":\"bomba\",\"valor\":false}",
+        "payloadType": "json",
+        "x": 230,
+        "y": 880,
+        "wires": [
+            [
+                "94e17d78dca6a12f"
+            ]
+        ]
+    },
+    {
+        "id": "94e17d78dca6a12f",
+        "type": "mqtt out",
+        "z": "fef8c534b412dd3e",
+        "name": "Enviar prueba de bomba",
+        "topic": "utm/iot/A09/commands/grupo9",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c1379c5b553b0e5",
+        "x": 550,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "d3f7ad04a1d56ad8",
+        "type": "inject",
+        "z": "fef8c534b412dd3e",
+        "name": "Prueba dosificación",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"accion\":\"dosificacion\",\"valor\":80}",
+        "payloadType": "json",
+        "x": 210,
+        "y": 980,
+        "wires": [
+            [
+                "94e17d78dca6a12f"
+            ]
+        ]
+    },
+    {
+        "id": "c14fd4226bce9338",
+        "type": "inject",
+        "z": "fef8c534b412dd3e",
+        "name": "Prueba detener descarga",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"accion\":\"descarga\",\"valor\":false}",
+        "payloadType": "json",
+        "x": 230,
+        "y": 1080,
+        "wires": [
+            [
+                "94e17d78dca6a12f"
+            ]
+        ]
+    },
+    {
+        "id": "c1bb69debe960964",
+        "type": "function",
+        "z": "fef8c534b412dd3e",
+        "name": "Detectar alarmas de planta",
+        "func": "\nconst datos = msg.payload;\nconst ahora = new Date().toISOString();\n\nconst condiciones = [\n    {\n        codigo: \"ALM-PH\",\n        mensaje: \"pH fuera de rango\",\n        severidad: \"Alta\",\n        activa: datos.ph < 6.5 || datos.ph > 8.5\n    },\n    {\n        codigo: \"ALM-TURB\",\n        mensaje: \"Turbidez elevada\",\n        severidad: \"Media\",\n        activa: datos.turbidez >= 5\n    },\n    {\n        codigo: \"ALM-NIVEL\",\n        mensaje: \"Tanque lleno: riesgo de desbordamiento\",\n        severidad: \"Critica\",\n        activa: datos.nivel >= 3000\n    }\n];\n\nconst anteriores = context.get(\"alarmasEstado\") || {};\nconst eventos = [];\n\nfor (const alarma of condiciones) {\n    const estabaActiva = anteriores[alarma.codigo] === true;\n\n    if (alarma.activa !== estabaActiva) {\n        eventos.push({\n            dispositivo: \"A09-Planta\",\n            codigo: alarma.codigo,\n            mensaje: alarma.mensaje,\n            severidad: alarma.severidad,\n            estado: alarma.activa ? \"ACTIVA\" : \"RECUPERADA\",\n            timestamp: ahora,\n            reconocida: false\n        });\n    }\n\n    anteriores[alarma.codigo] = alarma.activa;\n}\n\ncontext.set(\"alarmasEstado\", anteriores);\n\nif (eventos.length === 0) {\n    return null;\n}\n\nmsg.payload = {\n    dispositivo: \"A09-Planta\",\n    timestamp: ahora,\n    eventos: eventos,\n    total: eventos.length\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 580,
+        "wires": [
+            [
+                "a597ea25f28242af",
+                "56a088088b0bd95a"
+            ]
+        ]
+    },
+    {
+        "id": "a597ea25f28242af",
+        "type": "debug",
+        "z": "fef8c534b412dd3e",
+        "name": "Alarmas detectadas",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "56a088088b0bd95a",
+        "type": "json",
+        "z": "fef8c534b412dd3e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 850,
+        "y": 640,
+        "wires": [
+            [
+                "66e4b5e2d9fb3e61"
+            ]
+        ]
+    },
+    {
+        "id": "66e4b5e2d9fb3e61",
+        "type": "mqtt out",
+        "z": "fef8c534b412dd3e",
+        "name": "Publicar alarmas A09",
+        "topic": "utm/iot/A09/alarms/grupo9",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c1379c5b553b0e5",
+        "x": 1080,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "359752635148efb8",
+        "type": "change",
+        "z": "fef8c534b412dd3e",
+        "name": "Preparar estado de planta A09",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t  \"dispositivo\": \"A09-Planta\",\t  \"timestamp\": payload.timestamp,\t  \"estado\": payload.nivel >= 3000 ? \"TANQUE LLENO\" :\t    ((payload.ph < 6.5 or payload.ph > 8.5 or payload.turbidez >= 5) ? \"ALERTA\" : \"OPERATIVA\"),\t  \"bomba\": payload.bomba,\t  \"descarga\": payload.descarga\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 280,
+        "wires": [
+            [
+                "7de2caabd910d48a"
+            ]
+        ]
+    },
+    {
+        "id": "7de2caabd910d48a",
+        "type": "mqtt out",
+        "z": "fef8c534b412dd3e",
+        "name": "Publicar estado A09",
+        "topic": "utm/iot/A09/status/grupo9",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c1379c5b553b0e5",
+        "x": 1100,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "36f9e8a8b52158d6",
+        "type": "mqtt in",
+        "z": "17c8b03b530cf953",
+        "name": "Recibir datos Planta Grupo 9",
+        "topic": "utm/iot/A09/telemetry/grupo9",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "4c1379c5b553b0e5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 280,
+        "y": 220,
+        "wires": [
+            [
+                "c6321f0cc7627509"
+            ]
+        ]
+    },
+    {
+        "id": "c6321f0cc7627509",
+        "type": "debug",
+        "z": "17c8b03b530cf953",
+        "name": "Datos recibidos por MQTT",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "2689596edc23fdf7",
+        "type": "mqtt in",
+        "z": "17c8b03b530cf953",
+        "name": "Recibir estado A09",
+        "topic": "utm/iot/A09/status/grupo9",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "4c1379c5b553b0e5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 380,
+        "wires": [
+            [
+                "611fe2ba9f87e08c"
+            ]
+        ]
+    },
+    {
+        "id": "611fe2ba9f87e08c",
+        "type": "debug",
+        "z": "17c8b03b530cf953",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "3ce846205732bff4",
+        "type": "mqtt in",
+        "z": "d03eb7c19bb59125",
+        "name": "Datos para Dashboard A09",
+        "topic": "utm/iot/A09/telemetry/grupo9",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "4c1379c5b553b0e5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 390,
+        "y": 180,
+        "wires": [
+            [
+                "bf540b63360cb616",
+                "4489ef7f8e0ad399"
+            ]
+        ]
+    },
+    {
+        "id": "bf540b63360cb616",
+        "type": "debug",
+        "z": "d03eb7c19bb59125",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "4489ef7f8e0ad399",
+        "type": "ui-template",
+        "z": "d03eb7c19bb59125",
+        "group": "01eaef5ba49512dd",
+        "page": "",
+        "ui": "",
+        "name": "Panel Industrial - Grupo 9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"planta-a09\">\n    <h2>Grupo 9 Planta de Tratamiento de Aguas</h2>\n    <p class=\"subtitulo\">Grupo 9 | Monitoreo Industrial A09</p>\n\n    <!-- VARIABLES PRINCIPALES -->\n    <div class=\"indicadores\">\n      <div class=\"indicador\">\n        <span>Nivel del tanque</span>\n        <strong>{{ Number(datos.nivel).toFixed(2) }} L</strong>\n        <small>Capacidad: 3000 L</small>\n      </div>\n\n      <div class=\"indicador\">\n        <span>Caudal</span>\n        <strong>{{ datos.caudal }} L/min</strong>\n        <small>Caudal de entrada</small>\n      </div>\n\n      <div class=\"indicador\">\n        <span>pH del agua</span>\n        <strong>{{ Number(datos.ph).toFixed(2) }}</strong>\n        <small>Rango: 6.5 - 8.5</small>\n      </div>\n\n      <div class=\"indicador\">\n        <span>Turbidez</span>\n        <strong>{{ Number(datos.turbidez).toFixed(2) }} NTU</strong>\n        <small>Objetivo: menor a 5 NTU</small>\n      </div>\n    </div>\n\n    <!-- CINCO KPI -->\n    <div class=\"zona-kpi\">\n      <h3>Indicadores KPI de la planta</h3>\n\n      <div class=\"indicadores-kpi\">\n        <div class=\"indicador\">\n          <span>Volumen tratado</span>\n          <strong>{{ kpi.volumenTratado }} m³</strong>\n        </div>\n\n        <div class=\"indicador\">\n          <span>Tiempo en especificación</span>\n          <strong>{{ kpi.tiempoEspecificacion }} %</strong>\n        </div>\n\n        <div class=\"indicador\">\n          <span>Consumo de reactivo</span>\n          <strong>{{ kpi.consumoReactivo }} L</strong>\n        </div>\n\n        <div class=\"indicador\">\n          <span>Tiempo de proceso</span>\n          <strong>{{ kpi.tiempoProceso }} min</strong>\n        </div>\n\n        <div class=\"indicador\">\n          <span>Disponibilidad provisional</span>\n          <strong>{{ kpi.disponibilidad }} %</strong>\n        </div>\n      </div>\n    </div>\n\n    <!-- GRAFICOS HISTORICOS -->\n    <div class=\"zona-historicos\">\n      <h3>Gráficos históricos de la planta</h3>\n\n      <div class=\"selector-tiempo\">\n        <label>Ventana de visualización:</label>\n\n        <select v-model.number=\"ventanaMinutos\">\n          <option :value=\"5\">Últimos 5 minutos</option>\n          <option :value=\"15\">Últimos 15 minutos</option>\n          <option :value=\"30\">Últimos 30 minutos</option>\n          <option :value=\"60\">Últimos 60 minutos</option>\n        </select>\n      </div>\n\n      <p class=\"contador-historico\">\n        Muestras visibles: {{ muestrasVisibles.length }}\n      </p>\n\n      <!-- GRAFICO 1 -->\n      <div class=\"grafico-a09\">\n        <h4>Histórico de nivel y caudal</h4>\n\n        <div class=\"leyenda\">\n          <span class=\"leyenda-nivel\">● Nivel (L)</span>\n          <span class=\"leyenda-caudal\">● Caudal (L/min)</span>\n        </div>\n\n        <div v-if=\"muestrasVisibles.length > 0\">\n          <svg\n            viewBox=\"0 0 100 100\"\n            preserveAspectRatio=\"none\"\n            class=\"grafico-svg\">\n\n            <line\n              v-for=\"n in 5\"\n              :key=\"'g1-' + n\"\n              x1=\"0\"\n              :y1=\"n * 20 - 20\"\n              x2=\"100\"\n              :y2=\"n * 20 - 20\"\n              stroke=\"#475569\"\n              stroke-width=\"0.35\"\n              stroke-dasharray=\"2 2\"\n            />\n\n            <polyline\n              :points=\"puntosNivel\"\n              fill=\"none\"\n              stroke=\"#38bdf8\"\n              stroke-width=\"1\"\n              vector-effect=\"non-scaling-stroke\"\n            />\n\n            <polyline\n              :points=\"puntosCaudal\"\n              fill=\"none\"\n              stroke=\"#fbbf24\"\n              stroke-width=\"1\"\n              vector-effect=\"non-scaling-stroke\"\n            />\n          </svg>\n\n          <div class=\"etiquetas-grafico\">\n            <span>{{ horaInicial }}</span>\n            <span>{{ horaFinal }}</span>\n          </div>\n\n          <div class=\"resumen-grafico\">\n            <span>Nivel: {{ datos.nivel }} L</span>\n            <span>Caudal: {{ datos.caudal }} L/min</span>\n          </div>\n        </div>\n\n        <p v-else class=\"sin-datos\">\n          Recibiendo muestras históricas...\n        </p>\n      </div>\n\n      <!-- GRAFICO 2 -->\n      <div class=\"grafico-a09\">\n        <h4>Histórico de pH y turbidez</h4>\n\n        <div class=\"leyenda\">\n          <span class=\"leyenda-ph\">● pH</span>\n          <span class=\"leyenda-turbidez\">● Turbidez (NTU)</span>\n        </div>\n\n        <div v-if=\"muestrasVisibles.length > 0\">\n          <svg\n            viewBox=\"0 0 100 100\"\n            preserveAspectRatio=\"none\"\n            class=\"grafico-svg\">\n\n            <line\n              v-for=\"n in 5\"\n              :key=\"'g2-' + n\"\n              x1=\"0\"\n              :y1=\"n * 20 - 20\"\n              x2=\"100\"\n              :y2=\"n * 20 - 20\"\n              stroke=\"#475569\"\n              stroke-width=\"0.35\"\n              stroke-dasharray=\"2 2\"\n            />\n\n            <polyline\n              :points=\"puntosPH\"\n              fill=\"none\"\n              stroke=\"#4ade80\"\n              stroke-width=\"1\"\n              vector-effect=\"non-scaling-stroke\"\n            />\n\n            <polyline\n              :points=\"puntosTurbidez\"\n              fill=\"none\"\n              stroke=\"#fb7185\"\n              stroke-width=\"1\"\n              vector-effect=\"non-scaling-stroke\"\n            />\n          </svg>\n\n          <div class=\"etiquetas-grafico\">\n            <span>{{ horaInicial }}</span>\n            <span>{{ horaFinal }}</span>\n          </div>\n\n          <div class=\"resumen-grafico\">\n            <span>pH: {{ datos.ph }}</span>\n            <span>Turbidez: {{ datos.turbidez }} NTU</span>\n          </div>\n        </div>\n\n        <p v-else class=\"sin-datos\">\n          Recibiendo muestras históricas...\n        </p>\n      </div>\n\n      <p class=\"nota-graficos\">\n        Cada variable se escala por separado para visualizar\n        su tendencia. Las líneas no comparten escala vertical.\n      </p>\n    </div>\n\n    <!-- TANQUE -->\n    <div class=\"zona-tanque\">\n      <h3>Tanque de tratamiento</h3>\n\n      <div class=\"tanque\">\n        <div\n          class=\"agua\"\n          :style=\"{\n            height: Math.max(0, Math.min(100,\n              datos.nivel / 3000 * 100)) + '%'\n          }\">\n        </div>\n      </div>\n\n      <p>{{ (datos.nivel / 3000 * 100).toFixed(1) }} % lleno</p>\n      <p>Bomba: {{ datos.bomba ? 'Encendida' : 'Apagada' }}</p>\n      <p>Dosificación: {{ datos.dosificacion }} %</p>\n      <p>Descarga: {{ datos.descarga ? 'Activa' : 'Inactiva' }}</p>\n    </div>\n\n    <!-- CONTROLES -->\n    <div class=\"controles-a09\">\n      <h3>Panel de control de la planta</h3>\n\n      <div class=\"botones-a09\">\n        <button @click=\"enviarComando('bomba', true)\">\n          Encender bomba\n        </button>\n\n        <button @click=\"enviarComando('bomba', false)\">\n          Apagar bomba\n        </button>\n\n        <button @click=\"enviarComando('descarga', true)\">\n          Iniciar descarga\n        </button>\n\n        <button @click=\"enviarComando('descarga', false)\">\n          Detener descarga\n        </button>\n      </div>\n\n      <div class=\"dosis-a09\">\n        <label>Dosificación: {{ dosisSeleccionada }} %</label>\n\n        <input\n          type=\"range\"\n          min=\"0\"\n          max=\"100\"\n          v-model.number=\"dosisSeleccionada\"\n        >\n\n        <button\n          @click=\"enviarComando('dosificacion', dosisSeleccionada)\">\n          Aplicar dosificación\n        </button>\n      </div>\n\n      <p class=\"nota-control\">\n        Los cambios se reflejan al recibir la telemetría MQTT.\n      </p>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      dosisSeleccionada: 50,\n      ventanaMinutos: 5,\n      historicos: [],\n      ahoraHistorico: Date.now(),\n\n      datos: {\n        nivel: 0,\n        caudal: 0,\n        ph: 7,\n        turbidez: 0,\n        bomba: false,\n        dosificacion: 0,\n        descarga: false\n      },\n\n      kpi: {\n        volumenTratado: 0,\n        tiempoEspecificacion: 0,\n        consumoReactivo: 0,\n        tiempoProceso: 0,\n        disponibilidad: 0\n      }\n    };\n  },\n\n  computed: {\n    muestrasVisibles() {\n      const limite =\n        this.ahoraHistorico - this.ventanaMinutos * 60000;\n\n      return this.historicos.filter(m =>\n        Date.parse(m.timestamp) >= limite\n      );\n    },\n\n    horaInicial() {\n      if (!this.muestrasVisibles.length) return \"--:--\";\n\n      return new Date(\n        this.muestrasVisibles[0].timestamp\n      ).toLocaleTimeString();\n    },\n\n    horaFinal() {\n      if (!this.muestrasVisibles.length) return \"--:--\";\n\n      return new Date(\n        this.muestrasVisibles[\n          this.muestrasVisibles.length - 1\n        ].timestamp\n      ).toLocaleTimeString();\n    },\n\n    puntosNivel() {\n      return this.generarPuntos(\"nivel\", 0, 3000);\n    },\n\n    puntosCaudal() {\n      return this.generarPuntos(\"caudal\", 0, 50);\n    },\n\n    puntosPH() {\n      return this.generarPuntos(\"ph\", 0, 14);\n    },\n\n    puntosTurbidez() {\n      return this.generarPuntos(\"turbidez\", 0, 15);\n    }\n  },\n\n  methods: {\n    enviarComando(accion, valor) {\n      const comando = {\n        id: \"A09-\" + Date.now() + \"-\" +\n          Math.random().toString(36).slice(2, 8),\n        accion: accion,\n        valor: valor,\n        timestamp: new Date().toISOString()\n      };\n\n      this.send({\n        payload: JSON.stringify(comando)\n      });\n    },\n\n    generarPuntos(variable, minimo, maximo) {\n      const muestras = this.muestrasVisibles;\n      if (!muestras.length) return \"\";\n\n      const primerTiempo = Date.parse(muestras[0].timestamp);\n      const ultimoTiempo = Date.parse(muestras[muestras.length - 1].timestamp);\n      const duracion = Math.max(1, ultimoTiempo - primerTiempo);\n\n      return muestras.map((m, indice) => {\n        const tiempo = Date.parse(m.timestamp);\n        const x = muestras.length === 1\n          ? 50\n          : Math.max(0, Math.min(100,\n              (tiempo - primerTiempo) / duracion * 100\n            ));\n\n        const valor = Number(m[variable]);\n        const y = 100 - Math.max(0, Math.min(100,\n          (valor - minimo) / (maximo - minimo) * 100\n        ));\n\n        return x.toFixed(2) + \",\" + y.toFixed(2);\n      }).join(\" \");\n    },\n\n    registrarMuestra(muestra) {\n      if (!muestra ||\n          !Number.isFinite(Date.parse(muestra.timestamp))) {\n        return;\n      }\n\n      for (const campo of [\"nivel\", \"caudal\", \"ph\", \"turbidez\"]) {\n        if (!Number.isFinite(Number(muestra[campo]))) {\n          return;\n        }\n      }\n\n      const tiempo = Date.parse(muestra.timestamp);\n\n      const existe = this.historicos.some(m =>\n        m.timestamp === muestra.timestamp\n      );\n\n      if (existe) return;\n\n      const nuevaMuestra = {\n        timestamp: muestra.timestamp,\n        nivel: Number(muestra.nivel),\n        caudal: Number(muestra.caudal),\n        ph: Number(muestra.ph),\n        turbidez: Number(muestra.turbidez)\n      };\n\n      this.historicos.push(nuevaMuestra);\n\n      this.historicos.sort((a, b) =>\n        Date.parse(a.timestamp) - Date.parse(b.timestamp)\n      );\n\n      const limite = Date.now() - 3600000;\n\n      this.historicos = this.historicos\n        .filter(m => Date.parse(m.timestamp) >= limite)\n        .slice(-720);\n\n      this.ahoraHistorico = Date.now();\n    }\n  },\n\n  watch: {\n    msg: {\n      handler(m) {\n        if (!m || !m.payload) return;\n\n        try {\n          const p = typeof m.payload === \"string\"\n            ? JSON.parse(m.payload)\n            : m.payload;\n\n          if (!p || typeof p !== \"object\") return;\n\n          // TELEMETRIA\n          if (\n            p.nivel !== undefined &&\n            Number.isFinite(Number(p.nivel))\n          ) {\n            this.datos = {\n              ...this.datos,\n              ...p\n            };\n          }\n\n          // CINCO KPI\n          if (p.volumenTratado !== undefined) {\n            this.kpi = {\n              ...this.kpi,\n              volumenTratado: p.volumenTratado,\n              tiempoEspecificacion: p.tiempoEspecificacion,\n              consumoReactivo: p.consumoReactivo,\n              tiempoProceso: p.tiempoProceso,\n              disponibilidad: p.disponibilidad\n            };\n          }\n\n          // HISTORICOS MQTT\n          if (p.ultimaMuestra) {\n            this.registrarMuestra(p.ultimaMuestra);\n          }\n\n        } catch (e) {\n          console.warn(\"Mensaje MQTT no válido\", e);\n        }\n      },\n      immediate: true\n    }\n  }\n}\n</script>\n\n<style>\n.planta-a09 {\n  background: #0f172a;\n  color: white;\n  padding: 24px;\n  border-radius: 16px;\n  font-family: Arial, sans-serif;\n}\n\n.planta-a09 h2 {\n  text-align: center;\n  color: #38bdf8;\n  font-size: 25px;\n}\n\n.subtitulo {\n  text-align: center;\n  color: #94a3b8;\n  margin-bottom: 24px;\n}\n\n.indicadores,\n.indicadores-kpi {\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  gap: 14px;\n}\n\n.indicador {\n  background: #1e293b;\n  padding: 18px;\n  border-radius: 12px;\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n}\n\n.indicador span {\n  color: #cbd5e1;\n}\n\n.indicador strong {\n  color: #38bdf8;\n  font-size: 24px;\n}\n\n.indicador small {\n  color: #94a3b8;\n}\n\n.zona-kpi,\n.zona-historicos,\n.zona-tanque,\n.controles-a09 {\n  background: #1e293b;\n  padding: 20px;\n  border-radius: 12px;\n  margin-top: 20px;\n}\n\n.zona-kpi h3,\n.zona-historicos h3,\n.zona-tanque h3,\n.controles-a09 h3 {\n  text-align: center;\n  margin-bottom: 20px;\n}\n\n.zona-kpi .indicador {\n  background: #334155;\n}\n\n/* HISTORICOS */\n.selector-tiempo {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 12px;\n  flex-wrap: wrap;\n}\n\n.selector-tiempo select {\n  background: #334155;\n  color: white;\n  padding: 10px;\n  border: 1px solid #64748b;\n  border-radius: 8px;\n}\n\n.contador-historico {\n  text-align: center;\n  color: #94a3b8;\n  font-size: 13px;\n  margin: 15px 0;\n}\n\n.grafico-a09 {\n  background: #0f172a;\n  border-radius: 12px;\n  padding: 18px;\n  margin-top: 16px;\n}\n\n.grafico-a09 h4 {\n  text-align: center;\n  margin-bottom: 15px;\n}\n\n.leyenda {\n  display: flex;\n  justify-content: center;\n  gap: 22px;\n  margin-bottom: 14px;\n  flex-wrap: wrap;\n  font-size: 13px;\n}\n\n.leyenda-nivel { color: #38bdf8; }\n.leyenda-caudal { color: #fbbf24; }\n.leyenda-ph { color: #4ade80; }\n.leyenda-turbidez { color: #fb7185; }\n\n.grafico-svg {\n  width: 100%;\n  height: 230px;\n  background: #17243a;\n  border: 1px solid #334155;\n  border-radius: 8px;\n  display: block;\n}\n\n.etiquetas-grafico,\n.resumen-grafico {\n  display: flex;\n  justify-content: space-between;\n  gap: 10px;\n  color: #cbd5e1;\n  font-size: 12px;\n  margin-top: 10px;\n  flex-wrap: wrap;\n}\n\n.sin-datos,\n.nota-graficos {\n  text-align: center;\n  color: #94a3b8;\n  font-size: 12px;\n  padding: 10px;\n}\n\n/* TANQUE */\n.zona-tanque {\n  text-align: center;\n}\n\n.tanque {\n  width: 150px;\n  height: 240px;\n  border: 5px solid #94a3b8;\n  border-radius: 12px;\n  margin: 20px auto;\n  position: relative;\n  overflow: hidden;\n  background: #334155;\n}\n\n.agua {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  background: linear-gradient(#38bdf8, #0284c7);\n  transition: height 1s linear;\n}\n\n/* CONTROLES */\n.controles-a09 {\n  text-align: center;\n}\n\n.botones-a09 {\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  gap: 12px;\n}\n\n.controles-a09 button {\n  padding: 12px;\n  background: #0284c7;\n  border: none;\n  border-radius: 8px;\n  color: white;\n  font-weight: bold;\n  cursor: pointer;\n}\n\n.controles-a09 button:hover {\n  background: #0369a1;\n}\n\n.dosis-a09 {\n  display: flex;\n  flex-direction: column;\n  gap: 12px;\n  margin-top: 22px;\n}\n\n.dosis-a09 input {\n  width: 100%;\n  accent-color: #38bdf8;\n}\n\n.nota-control {\n  color: #94a3b8;\n  font-size: 12px;\n  margin-top: 16px;\n}\n\n@media (max-width: 600px) {\n  .indicadores,\n  .indicadores-kpi,\n  .botones-a09 {\n    grid-template-columns: 1fr;\n  }\n\n  .planta-a09 {\n    padding: 14px;\n  }\n\n  .grafico-svg {\n    height: 180px;\n  }\n}\n</style>",
+        "noerr": 0,
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 670,
+        "y": 260,
+        "wires": [
+            [
+                "b8677561e30c1d9f"
+            ]
+        ]
+    },
+    {
+        "id": "b8677561e30c1d9f",
+        "type": "mqtt out",
+        "z": "d03eb7c19bb59125",
+        "name": "Comandos desde Dashboard A09",
+        "topic": "utm/iot/A09/commands/grupo9",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c1379c5b553b0e5",
+        "x": 980,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "09f0c9d9ea9c485e",
+        "type": "mqtt in",
+        "z": "d03eb7c19bb59125",
+        "name": "Recibir KPI para Dashboard",
+        "topic": "utm/iot/A09/kpi/grupo9",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "4c1379c5b553b0e5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 360,
+        "y": 280,
+        "wires": [
+            [
+                "4489ef7f8e0ad399"
+            ]
+        ]
+    },
+    {
+        "id": "2ad9ee650a578151",
+        "type": "mqtt in",
+        "z": "d03eb7c19bb59125",
+        "name": "Recibir históricos Dashboard A09",
+        "topic": "utm/iot/A09/historicos/grupo9",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "4c1379c5b553b0e5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 370,
+        "y": 400,
+        "wires": [
+            [
+                "4489ef7f8e0ad399"
+            ]
+        ]
+    },
+    {
+        "id": "bf2dde10f4dd8189",
+        "type": "mqtt in",
+        "z": "9ee932ce78095ba9",
+        "name": "Recibir comandos Grupo 9",
+        "topic": "utm/iot/A09/commands/grupo9",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "4c1379c5b553b0e5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 120,
+        "wires": [
+            [
+                "2a3528b395123424"
+            ]
+        ]
+    },
+    {
+        "id": "fce0816a3964c878",
+        "type": "debug",
+        "z": "9ee932ce78095ba9",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "2a3528b395123424",
+        "type": "function",
+        "z": "9ee932ce78095ba9",
+        "name": "Procesar comandos de planta",
+        "func": "let comando = msg.payload;\n\nif (typeof comando === \"string\") {\n    try {\n        comando = JSON.parse(comando);\n    } catch (error) {\n        node.warn(\"Comando JSON no válido\");\n        return null;\n    }\n}\n\nif (!comando || typeof comando !== \"object\") {\n    return null;\n}\n\n// Preparar el comando para el simulador\nmsg.payload = comando;\nmsg.topic = \"control_planta_a09\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 120,
+        "wires": [
+            [
+                "fce0816a3964c878"
+            ]
+        ]
+    },
+    {
+        "id": "537da40bec1a4a44",
+        "type": "mqtt in",
+        "z": "9ee932ce78095ba9",
+        "name": "Recibir confirmación 09",
+        "topic": "utm/iot/A09/ack/grupo9",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "4c1379c5b553b0e5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 320,
+        "y": 260,
+        "wires": [
+            [
+                "b90967d15347c38e"
+            ]
+        ]
+    },
+    {
+        "id": "b90967d15347c38e",
+        "type": "debug",
+        "z": "9ee932ce78095ba9",
+        "name": "Confirmaciones ACK",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "df84b161b21055eb",
+        "type": "mqtt in",
+        "z": "9ee932ce78095ba9",
+        "name": "Recibir alarmas A09",
+        "topic": "utm/iot/A09/alarms/grupo9",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "4c1379c5b553b0e5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 350,
+        "y": 400,
+        "wires": [
+            [
+                "35328528f28831b8"
+            ]
+        ]
+    },
+    {
+        "id": "7204cbf9e611c3b6",
+        "type": "debug",
+        "z": "9ee932ce78095ba9",
+        "name": "Eventos de alarmas MQTT",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "35328528f28831b8",
+        "type": "function",
+        "z": "9ee932ce78095ba9",
+        "name": "Registrar historial de alarmas",
+        "func": "let datos = msg.payload;\n\nif (typeof datos === \"string\") {\n    try {\n        datos = JSON.parse(datos);\n    } catch (error) {\n        node.warn(\"Mensaje de alarma no válido\");\n        return null;\n    }\n}\n\nif (!datos || !Array.isArray(datos.eventos)) {\n    return null;\n}\n\nlet historial = flow.get(\"historialAlarmas\") || [];\n\nfor (const evento of datos.eventos) {\n    historial.push({\n        codigo: evento.codigo,\n        mensaje: evento.mensaje,\n        severidad: evento.severidad,\n        estado: evento.estado,\n        timestamp: evento.timestamp,\n        reconocida: evento.reconocida === true\n    });\n}\n\n// Conservar los últimos 200 eventos\nif (historial.length > 200) {\n    historial = historial.slice(-200);\n}\n\nflow.set(\"historialAlarmas\", historial);\n\nmsg.payload = {\n    eventosRecibidos: datos.eventos.length,\n    totalRegistrados: historial.length,\n    ultimoEvento: historial[historial.length - 1] || null\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 400,
+        "wires": [
+            [
+                "7204cbf9e611c3b6"
+            ]
+        ]
+    },
+    {
+        "id": "6564f2a989f98a97",
+        "type": "inject",
+        "z": "9ee932ce78095ba9",
+        "name": "Ver historial de alarmas",
+        "props": [
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "date"
+            },
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 360,
+        "y": 540,
+        "wires": [
+            [
+                "334abe42ea108d9e"
+            ]
+        ]
+    },
+    {
+        "id": "334abe42ea108d9e",
+        "type": "function",
+        "z": "9ee932ce78095ba9",
+        "name": "Consultar historial de alarmas",
+        "func": "\nlet historial = flow.get(\"historialAlarmas\") || [];\n\nmsg.payload = {\n    total: historial.length,\n    historial: historial\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 540,
+        "wires": [
+            [
+                "d33342bbc466a702"
+            ]
+        ]
+    },
+    {
+        "id": "d33342bbc466a702",
+        "type": "debug",
+        "z": "9ee932ce78095ba9",
+        "name": "Historial completo A09",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "d074adee468e0bb7",
+        "type": "inject",
+        "z": "9ee932ce78095ba9",
+        "name": "Reconocer alarma de turbidez",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"codigo\":\"ALM-TURB\"}",
+        "payloadType": "json",
+        "x": 360,
+        "y": 660,
+        "wires": [
+            [
+                "7971a7bf12f99582"
+            ]
+        ]
+    },
+    {
+        "id": "7971a7bf12f99582",
+        "type": "function",
+        "z": "9ee932ce78095ba9",
+        "name": "Procesar reconocimiento",
+        "func": "const codigo = msg.payload.codigo;\nlet historial = flow.get(\"historialAlarmas\") || [];\n\nlet encontrados = 0;\n\nfor (let evento of historial) {\n    if (evento.codigo === codigo &&\n        evento.reconocida === false) {\n        evento.reconocida = true;\n        evento.fechaReconocimiento =\n            new Date().toISOString();\n        encontrados++;\n    }\n}\n\nflow.set(\"historialAlarmas\", historial);\n\nmsg.payload = {\n    codigo: codigo,\n    reconocidos: encontrados,\n    mensaje: encontrados > 0\n        ? \"Alarma reconocida correctamente\"\n        : \"No hay alarmas pendientes de reconocimiento\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 660,
+        "wires": [
+            [
+                "2f10df819b7397db"
+            ]
+        ]
+    },
+    {
+        "id": "2f10df819b7397db",
+        "type": "debug",
+        "z": "9ee932ce78095ba9",
+        "name": "Confirmación de reconocimiento",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "2a886b07c28178d2",
+        "type": "mqtt in",
+        "z": "f8e8a5680da7ae29",
+        "name": "Recibir datos para KPI",
+        "topic": "utm/iot/A09/telemetry/grupo9",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "4c1379c5b553b0e5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 300,
+        "y": 220,
+        "wires": [
+            [
+                "2286fbff2e83a553",
+                "a9d535f027f960af"
+            ]
+        ]
+    },
+    {
+        "id": "2286fbff2e83a553",
+        "type": "function",
+        "z": "f8e8a5680da7ae29",
+        "name": "Calcular indicadores KPI",
+        "func": "\nlet datos = msg.payload;\n\n// Convertir JSON si llega como texto\nif (typeof datos === \"string\") {\n    try {\n        datos = JSON.parse(datos);\n    } catch (error) {\n        node.warn(\"KPI: JSON no válido\");\n        return null;\n    }\n}\n\n// Validar datos recibidos\nif (!datos || !Number.isFinite(Number(datos.nivel))) {\n    node.warn(\"KPI: datos de planta no válidos\");\n    return null;\n}\n\n// Recuperar indicadores guardados\nlet kpi = context.get(\"kpi\") || {\n    volumenTratado: 0,\n    tiempoEspecificacion: 0,\n    consumoReactivo: 0,\n    tiempoProceso: 0,\n    tiempoDisponible: 0,\n    muestras: 0,\n    ultimoTimestamp: null\n};\n\n// Validar fecha\nconst ahora = Date.parse(datos.timestamp);\n\nif (!Number.isFinite(ahora)) {\n    node.warn(\"KPI: timestamp no válido\");\n    return null;\n}\n\n// Calcular segundos transcurridos\nlet segundos = 0;\n\nif (kpi.ultimoTimestamp !== null) {\n    segundos = (ahora - kpi.ultimoTimestamp) / 1000;\n}\n\n// Detectar mensajes duplicados\nif (segundos === 0 && kpi.ultimoTimestamp === ahora) {\n    return null;\n}\n\n// Evitar intervalos negativos o excesivos\n// Después de un reinicio no se contabiliza\n// el tiempo durante el cual no hubo muestras\nif (segundos < 0 || segundos > 5) {\n    segundos = 0;\n}\n\n// Actualizar timestamp incluso si hubo reinicio\nkpi.ultimoTimestamp = ahora;\n\n// Obtener variables de la planta\nconst ph = Number(datos.ph);\nconst turbidez = Number(datos.turbidez);\nconst dosificacion = Number(datos.dosificacion);\n\nconst calidadCorrecta =\n    Number.isFinite(ph) &&\n    Number.isFinite(turbidez) &&\n    ph >= 6.5 &&\n    ph <= 8.5 &&\n    turbidez < 5;\n\n// 1. Volumen tratado acumulado internamente en litros\nif (datos.descarga === true) {\n    kpi.volumenTratado += 25 * segundos / 60;\n}\n\n// 2. Tiempo dentro de especificación\nif (calidadCorrecta) {\n    kpi.tiempoEspecificacion += segundos;\n}\n\n// 3. Consumo simulado de reactivo\n// Dosificación al 100% = 0.1 L/min\nif (Number.isFinite(dosificacion)) {\n    const dosis = Math.max(0, Math.min(100, dosificacion));\n\n    kpi.consumoReactivo +=\n        (dosis / 100) * 0.1 * segundos / 60;\n}\n\n// 4. Tiempo total del proceso\nkpi.tiempoProceso += segundos;\n\n// 5. Disponibilidad operativa aproximada\nif (datos.bomba === true) {\n    kpi.tiempoDisponible += segundos;\n}\n\n// Contador acumulado de muestras\nkpi.muestras++;\n\n// Guardar indicadores persistentemente\ncontext.set(\"kpi\", kpi);\n\n// Calcular porcentajes\nconst porcentajeEspecificacion =\n    kpi.tiempoProceso > 0\n        ? (kpi.tiempoEspecificacion /\n           kpi.tiempoProceso) * 100\n        : 0;\n\nconst disponibilidad =\n    kpi.tiempoProceso > 0\n        ? (kpi.tiempoDisponible /\n           kpi.tiempoProceso) * 100\n        : 0;\n\n// Preparar salida MQTT y Debug\nmsg.payload = {\n    dispositivo: \"A09-Planta\",\n    timestamp: datos.timestamp,\n\n    // Convertir litros a metros cúbicos\n    volumenTratado:\n        Number((kpi.volumenTratado / 1000).toFixed(4)),\n\n    tiempoEspecificacion:\n        Number(porcentajeEspecificacion.toFixed(2)),\n\n    consumoReactivo:\n        Number(kpi.consumoReactivo.toFixed(3)),\n\n    tiempoProceso:\n        Number((kpi.tiempoProceso / 60).toFixed(2)),\n\n    disponibilidad:\n        Number(disponibilidad.toFixed(2)),\n\n    muestras: kpi.muestras\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 220,
+        "wires": [
+            [
+                "9f6b4bdb66a9af50",
+                "28edbc9611694688"
+            ]
+        ]
+    },
+    {
+        "id": "9f6b4bdb66a9af50",
+        "type": "debug",
+        "z": "f8e8a5680da7ae29",
+        "name": "Resultados KPI",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "28edbc9611694688",
+        "type": "json",
+        "z": "f8e8a5680da7ae29",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 850,
+        "y": 140,
+        "wires": [
+            [
+                "9b094fff8ed719d3"
+            ]
+        ]
+    },
+    {
+        "id": "9b094fff8ed719d3",
+        "type": "mqtt out",
+        "z": "f8e8a5680da7ae29",
+        "name": "Publicar KPI Planta A09",
+        "topic": "utm/iot/A09/kpi/grupo9",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c1379c5b553b0e5",
+        "x": 1090,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "a9d535f027f960af",
+        "type": "function",
+        "z": "f8e8a5680da7ae29",
+        "name": "Registrar históricos de planta",
+        "func": "\nlet datos = msg.payload;\n\nif (typeof datos === \"string\") {\n    try {\n        datos = JSON.parse(datos);\n    } catch (error) {\n        return null;\n    }\n}\n\nif (!datos || !Number.isFinite(Number(datos.nivel))) {\n    return null;\n}\n\nlet historial = context.get(\"historicos\") || [];\n\nconst muestra = {\n    timestamp: datos.timestamp,\n    nivel: Number(datos.nivel),\n    caudal: Number(datos.caudal),\n    ph: Number(datos.ph),\n    turbidez: Number(datos.turbidez)\n};\n\n// Registrar una muestra cada 5 segundos\nconst ultimo = historial[historial.length - 1];\n\nif (ultimo) {\n    const diferencia =\n        Date.parse(muestra.timestamp) -\n        Date.parse(ultimo.timestamp);\n\n    if (!Number.isFinite(diferencia) ||\n        diferencia < 5000) {\n        return null;\n    }\n}\n\nhistorial.push(muestra);\n\n// Mantener hasta 720 muestras (aprox. una hora)\nif (historial.length > 720) {\n    historial = historial.slice(-720);\n}\n\ncontext.set(\"historicos\", historial);\n\nmsg.payload = {\n    totalMuestras: historial.length,\n    ultimaMuestra: muestra\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 300,
+        "wires": [
+            [
+                "62e3b0d41fef4592",
+                "8cf7cb29ad300d3a"
+            ]
+        ]
+    },
+    {
+        "id": "62e3b0d41fef4592",
+        "type": "debug",
+        "z": "f8e8a5680da7ae29",
+        "name": "Históricos registrados A09",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "8cf7cb29ad300d3a",
+        "type": "json",
+        "z": "f8e8a5680da7ae29",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 730,
+        "y": 420,
+        "wires": [
+            [
+                "53442e151391c88d"
+            ]
+        ]
+    },
+    {
+        "id": "53442e151391c88d",
+        "type": "mqtt out",
+        "z": "f8e8a5680da7ae29",
+        "name": "Publicar históricos A09",
+        "topic": "utm/iot/A09/historicos/grupo9",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c1379c5b553b0e5",
+        "x": 980,
+        "y": 420,
+        "wires": []
+    }
+]
